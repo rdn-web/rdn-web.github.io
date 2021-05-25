@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display a confirm box.</p>
+<input id="txtName" id="firstName" placeholder="Enter Name" type="text"  style="color: coral">
+<button onclick="myFunction()">Hit this Button</button>
+<button onclick="DispalyMessage()">Click Here</button>
+<script>
+function myFunction() {
+  confirm("Press a button!");
+}
+
+function DispalyMessage() {
+    var nm=document.getElementById("txtName").value
+  alert("Hello! !" + nm);
+}
+</script>
+
+</body>
+</html>

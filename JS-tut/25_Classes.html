@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+//Declaring class
+class Employee
+  {
+//Initializing an object
+    constructor(id,name)
+    {
+      this.id=id;
+      this.name=name;
+    }
+//Declaring method
+    detail()
+    {  document.writeln(this.id+" "+this.name+"<br>")
+    }
+  }
+//passing object to a variable 
+var e1=new Employee(101,"Martin Roy");
+e1.detail(); //calling method
+var e2=new Employee(102,"Duke William");
+
+e2.detail();
+
+
+class Manager extends Employee
+  {
+//Initializing an object
+    constructor(id,name,dept)
+    {
+      super(id,name);
+      this.dept=dept;
+    }
+//Declaring method
+    detail()
+    {
+  document.writeln(this.id+"---- "
+  +this.name+ "----"
+  + this.dept + "<br>")
+    }
+  }
+
+  var m1=new Manager(101,"John Teens","reserach");
+m1.detail(); //calling method
+
+</script>
+
+</body>
+</html>
+
+ 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creating Arrays in JavaScript</title>
+</head>
+<body>
+<script>
+
+ 
+   var name="Sandra Teens";
+   
+    // Printing variable values
+    document.write("<br>");
+    document.write("First demo of JavaScript" + "<br>");
+    
+    document.write("----------------------"+ "<br>");
+    document.write(" Name- " + name + "<br>");
+    document.write("----------------------"+ "<br>");
+
+    alert("Welcome------" + name);
+    // var retVal = prompt("Enter your name : ", "your name here");
+    //            document.write("You have entered : " + retVal);
+
+    var isReading = true; // yes, I'm reading
+    var isSleeping = false; // no, I'm not sleeping 
+
+var a = 2, b = 5, c = 10; 
+alert(b > a) // Output: true 
+alert(b > c) // Output: false
+
+$x=4;
+$y=2;
+alert("Sum=" + ($x+$y))
+
+// Declaring constant
+const PI = 3.14;
+alert("value of PI=" + PI); // 3.14
+
+var num=4;
+if (num>0 ) {
+  alert(num + "-----" + " is a positive no");
+} else {
+    alert(num + "-----" + " is a negative no")
+}
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+for (x of fruits) {
+  document.write(x + "-----");
+}
+var j=1;
+var res;
+do {
+    res += "The number is " + i;
+    j++;
+  }
+  while (j <=5);
+  alert(res);
+</script>
+</body>
+</html> 

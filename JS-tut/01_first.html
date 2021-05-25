@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Embedding JavaScript</title>
+</head>
+<body>
+    <script>
+    var greet = "Welcome to the world of JavaScript!!!!";
+    document.write(greet); // Prints: Hello World!
+    var x = 5;
+    var y = 10;
+    var sum = x + y;
+    document.write(sum); // Prints variable value
+
+    // var myVar = "Hello World!";
+    // document.write(myVar);
+ 
+
+   // Declaring multiple Variables
+var name = "Peter Parker", age = 21, isMarried = false;
+ 
+ /* Longer declarations can be written to span
+ multiple lines to improve the readability */
+ var name = "Peter Parker",
+ age = 21,
+ isMarried = false;
+
+ // Declaring variables
+let name1 = "Harry Potter";
+let age1 = 11;
+let isStudent1 = true;
+alert(name1 + " " + age1 + " " + isStudent1)
+
+// Declaring constant
+const PI = 3.14;
+console.log(PI); // 3.14
+
+// Trying to reassign
+PI = 10; // error
+
+var a = 'Hi there!';  // using single quotes
+var b = "Hi there!";  // using double quotes
+
+var a = "Let's have a cup of coffee."; // single quote inside double quotes
+var b = 'He said "Hello" and left.';  // double quotes inside single quotes
+var c = 'We\'ll never give up.';     // escaping single quote with backslash
+
+
+var isReading = true;   // yes, I'm reading
+var isSleeping = false; // no, I'm not sleeping
+
+var a = 2, b = 5, c = 10;
+ 
+if(a>0)
+{
+    alert(a + "is a positive number");
+}
+else
+{
+    alert(a + "is a negative number");
+}
+alert(b > a) // Output: true
+alert(b > c) // Output: false
+
+var a;
+var b = "Hello World!"
+ 
+alert(a) // Output: undefined
+alert(b) // Output: Hello World!
+
+typeof ""             // Returns "string"
+typeof "John"         // Returns "string"
+typeof "John Doe"     // Returns "string"
+
+typeof 0              // Returns "number"
+typeof 314            // Returns "number"
+typeof 3.14           // Returns "number"
+typeof (3)            // Returns "number"
+typeof (3 + 4)        // Returns "number"
+
+
+
+var b1 = Boolean(100);
+var b2 = Boolean(3.14);
+var b3 = Boolean(-15);
+var b4 = Boolean("Hello");
+var b5 = Boolean('false');
+var b6 = Boolean(1 + 7 + 3.14);
+
+document.getElementById("demo").innerHTML =
+"100 is " + b1 + "<br>" +
+"3.14 is " + b2 + "<br>" +
+"-15 is " + b3 + "<br>" +
+"Any (not empty) string is " + b4 + "<br>" +
+"Even the string 'false' is " + b5 + "<br>" +
+"Any expression (except zero) is " + b6;
+
+    </script>
+</body>
+</html>
